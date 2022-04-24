@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: examples.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.331 s <<< FAILURE! - in examples.ExamplesTest
+testParallel  Time elapsed: 1.311 s  <<< ERROR!
+java.lang.RuntimeException: mismatched input '"' expecting <EOF>
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:14)
+
