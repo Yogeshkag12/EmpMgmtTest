@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timesheets",
+  "info": {
+    "name": "timesheet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "employee": {
+      "model": "employee",
+      "via": "timesheets"
+    },
+    "mytime": {
+      "type": "decimal"
+    }
+  }
+}

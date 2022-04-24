@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leaves",
+  "info": {
+    "name": "leave"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "employee": {
+      "model": "employee",
+      "via": "leaves"
+    },
+    "reason": {
+      "type": "richtext"
+    },
+    "fromdate": {
+      "type": "datetime"
+    },
+    "todate": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "APPROVED",
+        "REJECTED",
+        "PENDING"
+      ]
+    },
+    "approver": {
+      "type": "string"
+    }
+  }
+}

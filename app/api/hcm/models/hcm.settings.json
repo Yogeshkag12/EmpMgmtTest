@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hcms",
+  "info": {
+    "name": "hcm"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

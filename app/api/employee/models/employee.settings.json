@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "name": "employee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "salary": {
+      "type": "decimal"
+    },
+    "mobile": {
+      "type": "biginteger"
+    },
+    "timesheets": {
+      "via": "employee",
+      "collection": "timesheet"
+    },
+    "leaves": {
+      "via": "employee",
+      "collection": "leave"
+    }
+  }
+}

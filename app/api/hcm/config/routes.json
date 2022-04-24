@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hcms",
+      "handler": "hcm.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hcms/count",
+      "handler": "hcm.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hcms/:id",
+      "handler": "hcm.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hcms",
+      "handler": "hcm.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hcms/:id",
+      "handler": "hcm.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hcms/:id",
+      "handler": "hcm.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
